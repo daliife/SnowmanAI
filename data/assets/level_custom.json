@@ -1,0 +1,266 @@
+{
+  "scene": "level_custom_snow",
+  "directory": "data/assets/",
+  "geometries": [
+    {
+      "name": "plane_10x20",
+      "file": "plane_10x20.obj"
+    },
+    {
+      "name": "plane_40x40",
+      "file": "plane_40x40.obj"
+    },
+    {
+      "name": "crate",
+      "file": "crate_1x1x1.obj"
+    },
+    {
+      "name": "presents",
+      "file": "presents.obj"
+    },
+    {
+      "name": "snowman",
+      "file": "snowman.obj"
+    },
+    {
+      "name": "sphere",
+      "file": "sphere.obj"
+    }
+
+  ],
+  "textures": [
+    {
+      "name": "blue",
+      "file": "block_blue.tga"
+    },
+    {
+      "name": "purple",
+      "file": "block_purple.tga"
+    },
+    {
+      "name": "teal",
+      "file": "block_teal.tga"
+    },
+    {
+      "name": "presents",
+      "file": "Christmas_Tree_Set_Diffuse.tga"
+    },
+    {
+      "name": "white",
+      "file": "white.tga"
+    }
+  ],
+  "shaders": [
+    {
+      "name": "phong",
+      "vertex": "data/shaders/phong.vert",
+      "fragment": "data/shaders/phong.frag"
+    },
+    {
+      "name": "surface",
+      "vertex": "data/shaders/surface.vert",
+      "fragment": "data/shaders/surface.frag"
+    }
+  ],
+  "materials": [
+    {
+      "name": "blue",
+      "shader": "phong",
+      "diffuse_texture": "blue"
+    },
+    {
+      "name": "purple",
+      "shader": "phong",
+      "diffuse_texture": "purple"
+    },
+    {
+      "name": "teal",
+      "shader": "phong",
+      "diffuse_texture": "teal"
+    },
+    {
+      "name": "presents",
+      "shader": "surface",
+      "diffuse_texture": "presents"
+    },
+    {
+      "name": "white",
+      "shader": "surface",
+      "diffuse_texture": "white"
+    }
+  ],
+  "lights": [
+    {
+      "name": "Light 1",
+      "position": [ 100, 150, 0 ],
+      "color": [ 0.5, 0.5, 1 ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "base_floor",
+      "geometry": "plane_40x40",
+      "material": "blue",
+      "transform": {
+        "translate": [ 0, 0, 0 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 2, 1, 2 ]
+      },
+      "collider": {
+        "type": "Box",
+        "center": [ 0, 0, 0 ],
+        "halfwidth": [ 20, 0.5, 20 ]
+      }
+    },
+    {
+      "name": "crate_1",
+      "geometry": "plane_40x40",
+      "material": "blue",
+      "transform": {
+        "translate": [ 0, -20, -40 ],
+        "rotate": [ 90, 0, 0 ],
+        "scale": [ 2, 1, 2 ]
+      },
+      "collider": {
+        "type": "Box",
+        "center": [ 0, 0, 0 ],
+        "halfwidth": [ 20, 0.5, 20 ]
+      }
+    },
+    {
+      "name": "crate_2",
+      "geometry": "plane_40x40",
+      "material": "blue",
+      "transform": {
+        "translate": [ -40, -20, 0 ],
+        "rotate": [ 0, 0, 90 ],
+        "scale": [ 2, 1, 2 ]
+      },
+      "collider": {
+        "type": "Box",
+        "center": [ 0, 0, 0 ],
+        "halfwidth": [ 20, 0.5, 20 ]
+      }
+    },
+    {
+      "name": "crate_3",
+      "geometry": "plane_40x40",
+      "material": "blue",
+      "transform": {
+        "translate": [ 40, -20, 0 ],
+        "rotate": [ 0, 0, 90 ],
+        "scale": [ 2, 1, 2 ]
+      },
+      "collider": {
+        "type": "Box",
+        "center": [ 0, 0, 0 ],
+        "halfwidth": [ 20, 0.5, 20 ]
+      }
+    },
+    {
+      "name": "crate_4",
+      "geometry": "plane_40x40",
+      "material": "blue",
+      "transform": {
+        "translate": [ 0, -39.5, 39.5 ],
+        "rotate": [ 90, 0, 0 ],
+        "scale": [ 2, 1, 2 ]
+      },
+      "collider": {
+        "type": "Box",
+        "center": [ 0, 0, 0 ],
+        "halfwidth": [ 20, 0.5, 20 ]
+      }
+    },
+    {
+      "name": "presents_1",
+      "geometry": "presents",
+      "material": "presents",
+      "transform": {
+        "translate": [ 10, 0.75, 10 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 0.02, 0.02, 0.02 ]
+      }
+    },
+    {
+      "name": "presents_2",
+      "geometry": "presents",
+      "material": "presents",
+      "transform": {
+        "translate": [ 10, 0.75, -10 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 0.02, 0.02, 0.02 ]
+      }
+    },
+    {
+      "name": "presents_3",
+      "geometry": "presents",
+      "material": "presents",
+      "transform": {
+        "translate": [ -10, 0.75, -10 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 0.02, 0.02, 0.02 ]
+      }
+    },
+    {
+      "name": "presents_4",
+      "geometry": "presents",
+      "material": "presents",
+      "transform": {
+        "translate": [ -10, 0.75, 10 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 0.02, 0.02, 0.02 ]
+      }
+    },
+    {
+      "name": "presents_5",
+      "geometry": "presents",
+      "material": "presents",
+      "transform": {
+        "translate": [ 20, 0.75, 0 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 0.02, 0.02, 0.02 ]
+      }
+    },
+    {
+      "name": "presents_6",
+      "geometry": "presents",
+      "material": "presents",
+      "transform": {
+        "translate": [ -20, 0.75, 0 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 0.02, 0.02, 0.02 ]
+      }
+    },
+    {
+      "name": "ramp_1",
+      "geometry": "plane_10x20",
+      "material": "blue",
+      "transform": {
+        "translate": [ 0, 5, 48.529 ],
+        "rotate": [ -30.837, 0, 0 ],
+        "scale": [ 1, 1, 1 ]
+      },
+      "collider": {
+        "type": "Box",
+        "center": [ 0, 0, 0 ],
+        "halfwidth": [ 5, 0.5, 10 ]
+      }
+    },
+    {
+      "name": "ramp_2",
+      "geometry": "plane_10x20",
+      "material": "blue",
+      "transform": {
+        "translate": [ 0, 10.066, 67 ],
+        "rotate": [ 0, 0, 0 ],
+        "scale": [ 1, 1, 1 ]
+      },
+      "collider": {
+        "type": "Box",
+        "center": [ 0, 0, 0 ],
+        "halfwidth": [ 5, 0.5, 10 ]
+      }
+    }
+  ]
+}
