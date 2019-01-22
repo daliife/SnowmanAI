@@ -36,11 +36,13 @@ public:
 
 	// Patrol parameters
 	DetectionType detectionType = DetectionRadius;
-	bool isActive = false;
-	bool invertDirection = true;
 	
-	float vision_range = 15.0f;
-	float close_range = 0.6f;
+	bool isActive = false;				// Toggles AI logic on and off
+	bool invertDirection = true;		// Follows sockets/path CW or CCW
+	float vision_range = 15.0f;			// Deteremines the radius zone that the AI guard will start detecting the player
+	float close_range = 0.6f;			// Safety zone to stop AI when too close with the player
+	
+	// Speeds for diferent states/movements
 	float attack_speed = 7.0f;
 	float patrol_speed = 5.0f;
 	float idle_speed = 2.0f;
@@ -57,7 +59,7 @@ public:
 	std::vector<Vertex> sockets;
 	int curr_socket = 2;
 
-	//Raycast for detecting player
+	//Raycast to detect the player
 	int AI_collider_forward;
 
 	void toggleAI() {

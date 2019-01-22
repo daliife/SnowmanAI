@@ -417,7 +417,7 @@ bool CollisionSystem::intersectRaySphere(Collider& ray, Collider& sphere) {
 //- Epsilon variable?
 //- Matrix 3x3 problem
 //- Check validity input parameters
-bool intersectBoxBox(OBB &a, OBB &b) {
+bool CollisionSystem::intersectBoxBox(OBB &a, OBB &b) {
 	//float ra, rb;
 	//lm::mat4 R, AbsR;
 	////Matrix33 R, AbsR;
@@ -488,7 +488,7 @@ bool intersectBoxBox(OBB &a, OBB &b) {
 	//if (Abs(t[1] * R[0][2] - t[0] * R[1][2]) > ra + rb) return false;
 	//// Since no separating axis is found, the OBBs must be intersecting
 	//return true;
-
+	return false;
 }
 
 // -----------------
