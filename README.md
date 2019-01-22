@@ -1,5 +1,6 @@
 # SNOWMAN: Simple AI project
-**[MVD - Game Engines]**
+
+**IMPORTANT** The project will prompt several errors if we execute the project in *Debug Mode*,  but not in *Release Mode*. To fix it, add/append into the *properties project panel > Linker > Input* the missing lib "freetype.lib".
 
 ![screenshot](https://i.imgur.com/D5oHsIS.png)
 
